@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+</head>
+<body>
+<div data-th-replace="Header"></div>
+
+</header><!-- End Header -->
+
+<!-- ======= Header Here ======= -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+        <h2>À propos du platforme JoBIt</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img th:src="@{/img/find.jpg}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+            <h1>A la recherche d'un emploi IT ? Des entreprises tunisiennes t’attendent !
+               </h1>
+            <p class="fst-italic">
+            </p>
+            <div class="col-lg-6 pt-4 pt-lg-0 content">
+              <h1>   Nos points forts </h1> </div>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Le job de tes rêves en Tunisie et à l'inetrnational.</li>
+              <li><i class="bi bi-check-circle"></i> Large choix de contrats.</li>
+              <li><i class="bi bi-check-circle"></i> Télétravail et mobilité.</li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container  ">
+
+        <div class="row no-gutters justify-content-center">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch  align-content-center ">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Internautes heureux</strong> </p>
+
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch justify-content-center">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>leaders en recrutement informatique</strong> </p>
+
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+
+
+  </main><!-- End #main -->
+
+<div data-th-replace="Footer"></div>
+</body>
+
+</html>

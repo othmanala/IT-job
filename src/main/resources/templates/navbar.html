@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link"th:href="@{/}">Home <span class="sr-only">(current)</span></a>
+            </li>
+
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Gestion Entreprise</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" th:href="@{/entreprises/list}"> Liste des entreprises</a>
+                    <a class="dropdown-item" th:href="@{/entreprises/add}"> Ajouter une entreprise</a>
+
+
+
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Gestion des offres</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown02">
+                    <a class="dropdown-item" th:href="@{/offres/list}">Liste des offres </a>
+                    <a class="dropdown-item" th:href="@{/offres/add}">Ajouter une offre</a>
+
+
+                </div>
+            </li>
+        </ul>
+
+        <a th:href="@{/logout}" class="btn btn-info btn-lg">
+            <span sec:authorize="isAuthenticated()"   class="glyphicon glyphicon-log-out">  </span> Déconnexion
+        </a>
+
+
+
+
+        </form>
+    </div>
+</nav>
+
